@@ -1,0 +1,135 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChoiceClash</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: black;
+            overflow-x: hidden;
+            font-size: 16px;
+        }
+        
+        .title-bar {
+            background-color: orange;
+            color: white;
+            text-align: center;
+            padding: 02px;
+            position: relative;
+        }
+
+        .back-arrow {
+            position: absolute;
+            left: 10px;
+            top: 30%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 24px;
+        }
+        
+        h1 {
+            font-size: 36px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 50px;
+            overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+        }
+
+        .artist {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .artist-photo {
+            width: 100%;
+            max-width: 250px; /* Adjust the width as needed */
+            height: auto;
+            border-radius: 0px;
+        }
+
+        .artist-info {
+            background-color: orange;
+            margin-top: 22px;
+            padding: 05px;
+            display: inline-block;
+        }
+
+        .artist-name {
+            color: white;
+            margin-top: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            height: 30px;
+            width: 200px;
+        }
+
+        .bottom-text {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            color: black;
+            font-size: 16px;
+            padding: 05px;
+        }
+
+        .attractive-text {
+            position: absolute;
+            top: 120px;
+            left: 17px;
+            color: black;
+            font-size: 20px;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .container {
+                overflow-x: hidden; /* Disable horizontal scrolling on larger screens */
+            }
+
+            .artist {
+                flex: 1;
+                margin-bottom: 0;
+            }
+
+            body {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title-bar">
+        <span class="back-arrow" onclick="history.back()">←</span>
+        <h1>ChoiceClash</h1>
+        <div class="attractive-text">Who's Better? Click to Choose</div>
+    </div>
+    
+    <div class="container">
+        <div class="artist">
+            <img src="https://www.usmagazine.com/wp-content/uploads/chester-linkin-park-2d06cbe4-7b06-4e53-83fd-d8953370f7d8.jpg" alt="Ariana Grande" class="artist-photo">
+            <div class="artist-info">
+                <div class="artist-name" onclick="location.href='your_page_for_Ariana_Grande.html';">Ariana Grande</div>
+            </div>
+        </div>
+        
+        <div class="artist">
+            <img src="https://images.medicinenet.com/images/slideshow/celebrities-with-ulcerative-colitis/celebrities-with-ulcerative-colitis-s9-dan-reynolds.jpg" alt="Bebe Rexha" class="artist-photo">
+            <div class="artist-info">
+                <div class="artist-name" onclick="location.href='your_page_for_Britney_Spears.html';">Bebe Rexha</div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-text">
+        A Dnyanesh Mohite Production
+    </div>
+</body>
+</html>
