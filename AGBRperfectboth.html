@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChoiceClash</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: black;
+            overflow-x: hidden;
+            font-size: 16px;
+        }
+        
+        .title-bar {
+            background-color: orange;
+            color: white;
+            text-align: center;
+            padding: 02px;
+            position: relative;
+        }
+
+        .back-arrow {
+            position: absolute;
+            left: 10px;
+            top: 30%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 24px;
+        }
+        
+        h1 {
+            font-size: 36px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 70px;
+        }
+
+        .artist {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .artist-photo {
+            width: 100%;
+            max-width: 150px; /* Adjust the width as needed */
+            height: auto;
+            border-radius: 0px;
+        }
+
+        .artist-info {
+            background-color: orange;
+            margin-top: 22px;
+            padding: 05px;
+            display: inline-block;
+            width:70%;
+        }
+
+        .artist-name {
+            color: white;
+            margin-top: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            height: 30px;
+        }
+
+        .bottom-text {
+            position: absolute;
+            bottom: 10;
+            right: 0;
+            color: black;
+            font-size: 16px;
+            padding: 05px;
+        }
+
+        .attractive-text {
+            position: absolute;
+            top: 120px;
+            left: 05px;
+            color: black;
+            font-size: 20px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 10;
+            width: 100%;
+            color: black;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="title-bar">
+        <span class="back-arrow" onclick="history.back()">←</span>
+        <h1>ChoiceClash</h1>
+        <div class="attractive-text">Who's Better? Click to Choose</div>
+    </div>
+    
+    <div class="container">
+        <div class="artist">
+            <img src="https://www.hawtcelebs.com/wp-content/uploads/2017/06/http-starity.hu-forum-topik-581878-ariana-grande-performs-on-stage-during-the-one-love-manchester-benefit-concert-at-old-trafford-in-manchester-england-june-4-2017-_6.jpg" alt="Ariana Grande" class="artist-photo">
+            <div class="artist-info">
+                <div class="artist-name" onclick="location.href='file:///C:/Users/Bharat/CB.html';">Ariana Grande</div>
+            </div>
+        </div>
+        
+        <div class="artist">
+            <img src="https://www.hawtcelebs.com/wp-content/uploads/2019/11/bebe-rexha-at-glaad-beyond-spirit-day-concert-in-los-angeles-11-16-2019-2.jpg" alt="Bebe Rexha" class="artist-photo">
+            <div class="artist-info">
+                <div class="artist-name" onclick="location.href='file:///C:/Users/Bharat/CB.html';">Bebe Rexha</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div>ChoiceClash &copy; 2024</div>
+        <div>A Dnyanesh Mohite Production</div>
+    </div>
+</body>
+</html>
